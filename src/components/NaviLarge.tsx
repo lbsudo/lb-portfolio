@@ -38,32 +38,28 @@ export const NaviLarge = ({ Function1, Function2, Function3, Function4, State1, 
           <div className="flex flex-col justify-between items-center p-4 text-2xl space-y-6">
             <button onClick={() => Function1()} style={{ color: State1 ? '#8b5cf6' : 'currentcolor' }}>
               <FaRegUser className="hover:text-violet-500" >
-                <Link href={''} />
               </FaRegUser>
             </button>
             <button onClick={() => Function2()} style={{ color: State2 ? '#8b5cf6' : 'currentcolor' }}>
               <FaRegListAlt className="hover:text-violet-500" >
-                <Link href={''} />
               </FaRegListAlt>
             </button>
             <button onClick={() => Function3()} style={{ color: State3 ? '#8b5cf6' : 'currentcolor' }}>
               <FaRegFolderOpen className="hover:text-violet-500">
-                <Link href={''} />
               </FaRegFolderOpen>
             </button>
-            <button >
-              <FaRegNewspaper className="hover:text-violet-500">
-                <Link href={''} />
-              </FaRegNewspaper>
+            <button>
+              <Link href='https://dev.to/lbsudo' target="_blank">
+                <FaRegNewspaper className="hover:text-violet-500" />
+              </Link>
             </button>
             <button onClick={() => Function4()} style={{ color: State4 ? '#8b5cf6' : 'currentcolor' }}>
               <FaRegPaperPlane className="hover:text-violet-500">
-                <Link href={''} />
               </FaRegPaperPlane>
             </button>
           </div>
         </div>
-      </div>
+      </div >
     </>
   );
 };

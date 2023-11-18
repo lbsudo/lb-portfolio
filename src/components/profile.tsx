@@ -29,16 +29,16 @@ export default function Profile() {
 
         </div >
         <div className="flex justify-center items-center space-x-4 text-white">
-          <Link href="" className="text-2xl">
+          <Link href="https://github.com/lbsudo" target='_blank' className="text-2xl">
             <FaGithub className="text-white" />
           </Link>
-          <Link href="" className="text-2xl">
+          <Link href="https://www.linkedin.com/in/lbsudo/" target='_blank' className="text-2xl">
             <FaLinkedinIn className="text-white" />
           </Link>
-          <Link href="" className="text-2xl">
+          <Link href="https://www.instagram.com/lbdluxe" target='_blank' className="text-2xl">
             <FaInstagram className="text-white" />
           </Link>
-          <Link href="" className="text-2xl">
+          <Link href="https://www.youtube.com/lbdluxe-digital" target='_blank' className="text-2xl">
             <FaYoutube className="text-white" />
             {/* <FaXTwitter /> */}
           </Link>

@@ -30,16 +30,16 @@ export default function ProfileLarge() {
 
           </div >
           <div className="flex justify-center items-center space-x-4 text-white pt-3">
-            <Link href="" className="text-2xl">
+            <Link href="https://github.com/lbsudo" target='_blank' className="text-2xl">
               <FaGithub className="text-white" />
             </Link>
-            <Link href="" className="text-2xl">
+            <Link href="https://www.linkedin.com/in/lbsudo/" target='_blank' className="text-2xl">
               <FaLinkedinIn className="text-white" />
             </Link>
-            <Link href="" className="text-2xl">
+            <Link href="https://www.instagram.com/lbdluxe" target='_blank' className="text-2xl">
               <FaInstagram className="text-white" />
             </Link>
-            <Link href="" className="text-2xl">
+            <Link href="https://www.youtube.com/@lbdluxe-digital" target='_blank' className="text-2xl">
               <FaYoutube className="text-white" />
               {/* <FaXTwitter /> */}
             </Link>
@@ -47,10 +47,11 @@ export default function ProfileLarge() {
           {/* Gradient line */}
           <div className='flex flex-col mt-6 mb-3 w-full'>
             <div className="gradient-line my-2 w-full z-2"></div>
-            <button className="font-bold text-xl flex justify-center items-center">
-              <p className='pr-3'>DOWNLOAD RESUME</p>
-              <MdCloudDownload />
-
+            <button className="font-bold text-white text-xl flex justify-center items-center">
+              <Link href='/LBCV.pdf' target="_blank" color='foreground'>
+                <p className='pr-3 text-white' >DOWNLOAD RESUME</p>
+                <MdCloudDownload />
+              </Link>
             </button>
           </div>
         </div>

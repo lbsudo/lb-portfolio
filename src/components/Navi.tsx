@@ -55,7 +55,7 @@ export const Navi = () => {
         </button>
         <button>
           <FaRegNewspaper>
-            <Link href={''} />
+            <Link href={'https://dev.to/lbsudo'} />
           </FaRegNewspaper>
         </button>
         <button>
