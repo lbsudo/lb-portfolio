@@ -4,7 +4,7 @@ import Infotags from './Infotags'
 export default function AboutMe() {
   return (
     <>
-      <div className='bg-stone-800 h-auto w-full px-4'>
+      <div className='bg-stone-800/50 h-auto w-full px-4'>
         <p className='text-2xl pt-4 font-bold'>About Me</p>
         <div className='flex flex-col justify-center items-center pt-2'>
           <div className="gradient-line my-2 w-full z-20"></div>

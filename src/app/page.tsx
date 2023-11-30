@@ -67,10 +67,10 @@ export default function Home() {
             <div className="flex justify-center items-center h-4/6 w-2/6">
               <ProfileLarge />
             </div>
-            <div className="flex flex-col justify-start items-start h-[448px] w-3/6 bg-stone-800 overflow-y-auto">
+            <div className="flex flex-col justify-start items-start h-[448px] w-3/6 bg-stone-800/50 overflow-y-auto">
               {showAboutMe && (
                 <motion.div
-                  className="pb-6 w-full"
+                  className=" w-full"
                   initial="hidden"
                   animate="visible"
                   exit="exit"
@@ -83,7 +83,7 @@ export default function Home() {
               )}
               {showResume && (
                 <motion.div
-                  className="pb-6 w-full"
+                  className=" w-full"
                   initial="hidden"
                   animate="visible"
                   exit="exit"
@@ -96,7 +96,7 @@ export default function Home() {
               )}
               {showWorks && (
                 <motion.div
-                  className="pb-6 w-full"
+                  className=" w-full"
                   initial="hidden"
                   animate="visible"
                   exit="exit"
@@ -108,7 +108,7 @@ export default function Home() {
               )}
               {showContact && (
                 <motion.div
-                  className="pb-6 w-full"
+                  className=" w-full"
                   initial="hidden"
                   animate="visible"
                   exit="exit"

@@ -53,7 +53,7 @@ export default function RootLayout({
             {/* <Navbar /> */}
             <main className="container max-w-full h-full flex-grow relative">
               <video autoPlay loop muted playsInline className="absolute md:fixed h-full w-full z-0 object-cover object-center overflow-hidden">
-                <source src={'/video/space1.mp4'} type="video/mp4" />
+                <source src={'/video/sunset.mp4'} type="video/mp4" />
               </video>
               <div className="z-5">
                 {children}

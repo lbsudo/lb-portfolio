@@ -20,7 +20,7 @@ export const NaviLarge = ({ Function1, Function2, Function3, Function4, State1, 
   return (
     <>
       <div className="pr-1 flex flex-col justify-center items-center">
-        <div className="bg-stone-800 my-1">
+        <div className="bg-stone-800/50 my-1">
           {/* Side-bar control & ThemeSwitch */}
           <div className="flex flex-col justify-between items-center px-4 py-3 text-2xl space-y-4">
             <button>
@@ -28,12 +28,12 @@ export const NaviLarge = ({ Function1, Function2, Function3, Function4, State1, 
                 <Link href={''} />
               </FaBars>
             </button>
-            <button>
-              <ThemeSwitch />
-            </button>
+            {/* <button> */}
+            {/*   <ThemeSwitch /> */}
+            {/* </button> */}
           </div>
         </div>
-        <div className="bg-stone-800 mb-20">
+        <div className="bg-stone-800/50 mb-20">
           {/* Side-bar control & ThemeSwitch */}
           <div className="flex flex-col justify-between items-center p-4 text-2xl space-y-6">
             <button onClick={() => Function1()} style={{ color: State1 ? '#8b5cf6' : 'currentcolor' }}>
