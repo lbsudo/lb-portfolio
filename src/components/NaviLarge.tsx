@@ -1,7 +1,10 @@
 "use client"
+import { useState } from "react";
 import { FaRegUser, FaRegListAlt, FaRegFolderOpen, FaRegNewspaper, FaRegPaperPlane, FaBars } from "react-icons/fa";
 import Link from "next/link";
 import { ThemeSwitch } from "./theme-switch";
+import { motion, AnimatePresence } from 'framer-motion';
+import Sidebar from "./Sidebar";
 
 type Props = {
   Function1: any,
@@ -14,8 +17,15 @@ type Props = {
   State4: any
 }
 
+const variants = {
+  initial: { x: '-100vw' },
+  animate: { x: 0 },
+  exit: { x: '-100vw' },
+};
+
 
 export const NaviLarge = ({ Function1, Function2, Function3, Function4, State1, State2, State3, State4 }: Props) => {
+  const [showComponent, setShowComponent] = useState(false);
 
   return (
     <>
@@ -23,14 +33,9 @@ export const NaviLarge = ({ Function1, Function2, Function3, Function4, State1, 
         <div className="bg-stone-800/50 my-1">
           {/* Side-bar control & ThemeSwitch */}
           <div className="flex flex-col justify-between items-center px-4 py-3 text-2xl space-y-4">
-            <button>
-              <FaBars  >
-                <Link href={''} />
-              </FaBars>
+            <button onClick={() => setShowComponent(true)}>
+              <FaBars />
             </button>
-            {/* <button> */}
-            {/*   <ThemeSwitch /> */}
-            {/* </button> */}
           </div>
         </div>
         <div className="bg-stone-800/50 mb-20">
@@ -60,6 +65,20 @@ export const NaviLarge = ({ Function1, Function2, Function3, Function4, State1, 
           </div>
         </div>
       </div >
+      <AnimatePresence>
+        {showComponent && (
+          <motion.div
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            variants={variants}
+            className="w-1/5 px-2 text-xl bg-stone-800 absolute top-0 left-0 h-screen"
+          >
+            <button onClick={() => setShowComponent(false)}>X</button>
+            <Sidebar />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 };

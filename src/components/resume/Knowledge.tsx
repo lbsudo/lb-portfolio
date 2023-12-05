@@ -4,7 +4,7 @@ import { IoMdCheckmark } from "react-icons/io";
 export default function Knowledge() {
   return (
     <>
-      <div className='bg-stone-800/50 h-auto w-full px-4'>
+      <div className='bg-stone-800/50 h-auto w-full px-4 pb-4'>
         <p className='text-2xl pt-6 font-bold'>Knowledge</p>
         <div className='flex flex-col text-center justify-center items-center pt-2'>
           <div className="gradient-line my-2 w-full z-20"></div>

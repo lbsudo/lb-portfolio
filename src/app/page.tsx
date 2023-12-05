@@ -66,6 +66,7 @@ export default function Home() {
             />
             <div className="flex justify-center items-center h-4/6 w-2/6">
               <ProfileLarge />
+              {/* <Profile /> */}
             </div>
             <div className="flex flex-col justify-start items-start h-[448px] w-3/6 bg-stone-800/50 overflow-y-auto">
               {showAboutMe && (
@@ -115,7 +116,7 @@ export default function Home() {
                   variants={variants}
                   transition={{ duration: .5, ease: "easeInOut" }}
                 >
-                  <Contact />
+                  {/* <Contact /> */}
                 </motion.div>
               )}
             </div>
@@ -129,7 +130,7 @@ export default function Home() {
 
       {/* Mobile Page */}
       <div className="relative z-20 md:hidden">
-        <section className="w-screen h-auto pb-12 flex justify-center ">
+        <section className="w-full h-auto pb-12 flex justify-center ">
           <Profile />
         </section>
         <section className="pb-6">

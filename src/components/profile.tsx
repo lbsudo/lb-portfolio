@@ -9,7 +9,7 @@ export default function Profile() {
   const words: string[] = ['Full-Stack Developer', 'UI/UX Designer', 'Pen-Tester', 'CMS Content Editor']
   return (
     <div className='bg-[url("/propic.png")] bg-cover bg-center bg-no-repeat w-full h-4/6 flex flex-col justify-center items-center'>
-      <div className=' flex flex-col justify-center items-center'>
+      <div className=' flex flex-col justify-center items-center w-full'>
 
         <div className="flex flex-col mt-40 justify-center items-center space-y-2">
           <div>
@@ -44,8 +44,8 @@ export default function Profile() {
           </Link>
         </div>
         {/* Gradient line */}
-        <div className='flex flex-col mt-9 mb-2'>
-          <div className="gradient-line my-2 w-screen"></div>
+        <div className='flex flex-col mt-9 mb-2 w-full'>
+          <div className="gradient-line my-2 w-full"></div>
           <button className="font-bold text-lg flex justify-center items-center">
             <p className='pr-3'>DOWNLOAD RESUME</p>
             <MdCloudDownload />

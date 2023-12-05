@@ -10,14 +10,14 @@ export default function ProfileLarge() {
   return (
     <>
       <div className='bg-[url("/propic.png")] bg-cover bg-center bg-no-repeat w-full h-full pt-32 z-5 flex flex-col justify-center items-center '>
-        <div className=' flex flex-col justify-center items-center w-full z-5'>
+        <div className=' flex flex-col justify-center items-center w-auto md:w-full z-5'>
 
           <div className="flex flex-col w-full mt-40 justify-center items-center space-y-0.5">
             <div className='w-full'>
               <p className=" text-4xl text-center whitespace-nowrap w-full font-bold">Lawrence Brown</p>
             </div>
             <div className='w-full'>
-              <p className="text-violet-500 text-2xl text-center h-10 w-auto flex justify-center items-center whitespace-nowrap">
+              <p className="text-violet-500 text-2xl text-center h-10 w-full flex justify-center items-center whitespace-nowrap">
                 <Typewriter
                   words={words}
                   loop={false}
