@@ -44,32 +44,32 @@ export default function Project() {
                   className=" object-cover relative"
                   src={item.img}
                 />
-                <div className="absolute w-full z-10 ">
-                  <div className="flex space-x-2 w-full justify-end py-2 pr-2">
-                    <button className="bg-stone-800 p-2 rounded-full">
-                      <Link href={item.github} target="_blank">
-                        <FaGithub className="text-2xl" />
-                      </Link>
-                    </button>
-                    <button className="bg-stone-800 p-2 rounded-full">
-                      <Link href={item.route} target="_blank">
-                        <FaLink className="text-2xl" />
-                      </Link>
-                    </button>
-                  </div>
-                </div>
               </CardBody>
               <CardFooter className="flex justify-center items-center">
                 <b className="">{item.title}</b>
               </CardFooter>
             </Card>
+            {/* <div className="absolute w-full z-10 "> */}
+            {/*   <div className="flex space-x-2 w-full justify-end py-2 pr-2"> */}
+            {/*     <button className="bg-stone-800 p-2 rounded-full"> */}
+            {/*       <Link href={item.github} target="_blank"> */}
+            {/*         <FaGithub className="text-2xl" /> */}
+            {/*       </Link> */}
+            {/*     </button> */}
+            {/*     <button className="bg-stone-800 p-2 rounded-full"> */}
+            {/*       <Link href={item.route} target="_blank"> */}
+            {/*         <FaLink className="text-2xl" /> */}
+            {/*       </Link> */}
+            {/*     </button> */}
+            {/*   </div> */}
+            {/* </div> */}
           </>
         ))}
         {selectedItem && (
-          <Modal isOpen={isOpen} onOpenChange={onOpenChange} size="md">
+          <Modal isOpen={isOpen} onOpenChange={onOpenChange} size="sm">
             <ModalContent>
               {(onClose) => (
-                <>
+                <div>
                   <ModalHeader className="flex flex-col gap-1">{selectedItem.title}</ModalHeader>
                   <ModalBody className="flex justify-center items-center">
                     <Image
@@ -78,26 +78,42 @@ export default function Project() {
                       src={selectedItem.img}
                       className="w-full"
                     />
-                    <div className="flex justify-center items-center">
-                      {selectedItem.react === true ?
-                        <span className=''><SiReact className='p-3 text-6xl text-white' /></span> :
-                        ""}
-                      {selectedItem.next === true ?
-                        <span className=''><SiNextdotjs className='p-3 text-6xl text-white' /></span> :
-                        ""}
-                      {selectedItem.ts === true ?
-                        <span className=''><SiTypescript className='p-3 text-6xl text-white' /></span> :
-                        ""}
-                      {selectedItem.tw === true ?
-                        <span className=''><SiTailwindcss className='p-3 text-6xl text-white' /></span> :
-                        ""}
-                      {selectedItem.fm === true ?
-                        <span className=''><SiNextui className='p-3 text-6xl text-white' /></span> :
-                        ""}
-                      {selectedItem.fm === true ?
-                        <span className=''><SiFramer className='p-3 text-6xl text-white' /></span> :
-                        ""}
+                    <div className="flex flex-col justify-center items-center">
+                      <div className="flex">
+                        {selectedItem.react === true ?
+                          <span className=''><SiReact className='p-3 text-6xl text-white' /></span> :
+                          ""}
+                        {selectedItem.next === true ?
+                          <span className=''><SiNextdotjs className='p-3 text-6xl text-white' /></span> :
+                          ""}
+                        {selectedItem.ts === true ?
+                          <span className=''><SiTypescript className='p-3 text-6xl text-white' /></span> :
+                          ""}
+                        {selectedItem.tw === true ?
+                          <span className=''><SiTailwindcss className='p-3 text-6xl text-white' /></span> :
+                          ""}
+                        {selectedItem.fm === true ?
+                          <span className=''><SiNextui className='p-3 text-6xl text-white' /></span> :
+                          ""}
+                        {selectedItem.fm === true ?
+                          <span className=''><SiFramer className='p-3 text-6xl text-white' /></span> :
+                          ""}
+                      </div>
+                      <div className="flex space-x-2 w-full justify-center py-2 pr-2">
+                        <button className="bg-stone-800 p-2 rounded-full">
+                          <Link href={selectedItem.github} target="_blank">
+                            <FaGithub className="text-2xl" />
+                          </Link>
+                        </button>
+                        <button className="bg-stone-800 p-2 rounded-full">
+                          <Link href={selectedItem.route} target="_blank">
+                            <FaLink className="text-2xl" />
+                          </Link>
+                        </button>
+                      </div>
                     </div>
+                    {/* <div className="absolute w-full z-10 "> */}
+                    {/* </div> */}
                     <p>
                       {selectedItem.description}
                     </p>
@@ -107,7 +123,7 @@ export default function Project() {
                       Close
                     </Button>
                   </ModalFooter>
-                </>
+                </div>
               )}
             </ModalContent>
           </Modal>

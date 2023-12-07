@@ -116,7 +116,7 @@ export default function Home() {
                   variants={variants}
                   transition={{ duration: .5, ease: "easeInOut" }}
                 >
-                  {/* <Contact /> */}
+                  <Contact />
                 </motion.div>
               )}
             </div>
