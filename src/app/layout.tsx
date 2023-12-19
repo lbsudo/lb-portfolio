@@ -3,13 +3,10 @@ import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Providers } from "./providers";
-import { Navbar } from "@/components/navbar";
-import { Link } from "@nextui-org/link";
 import clsx from "clsx";
 import { Viewport } from "next";
 import { Navi } from "@/components/Navi";
 import toast, { Toaster } from 'react-hot-toast';
-import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: {

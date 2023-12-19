@@ -9,7 +9,7 @@ export default function ProfileLarge() {
   const words: string[] = ['Full-Stack Developer', 'UI/UX Designer', 'Pen-Tester', 'CMS Content Editor']
   return (
     <>
-      <div className='bg-[url("/propic.png")] bg-cover bg-center bg-no-repeat w-full h-full pt-32 z-5 flex flex-col justify-center items-center '>
+      <div className='bg-[url("/propic.png")] bg-cover bg-center bg-no-repeat w-full h-full pt-32 px-8 z-5 flex flex-col justify-center items-center '>
         <div className=' flex flex-col justify-center items-center w-auto md:w-full z-5'>
 
           <div className="flex flex-col w-full mt-40 justify-center items-center space-y-0.5">

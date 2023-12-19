@@ -53,7 +53,7 @@ export default function Home() {
     <div>
       <AnimatePresence>
         <div className="relative z-10 w-full h-full hidden md:flex justify-center items-center">
-          <section className="h-5/6 w-5/6 flex justify-center items-center pt-16">
+          <section className=" w-5/6 h-screen flex justify-center items-center pt-16">
             <NaviLarge
               Function1={handleButtonClick1}
               Function2={handleButtonClick2}
@@ -64,7 +64,7 @@ export default function Home() {
               State3={showWorks}
               State4={showContact}
             />
-            <div className="flex justify-center items-center h-4/6 w-2/6">
+            <div className="flex justify-center items-center h-auto w-auto">
               <ProfileLarge />
               {/* <Profile /> */}
             </div>
