@@ -17,11 +17,15 @@ type Props = {
   State4: any
 }
 
+
+
 const variants = {
-  initial: { x: '-100vw' },
-  animate: { x: 0 },
-  exit: { x: '-100vw' },
+  initial: { x: '-100vw', transition: { type: 'tween', duration: 0.5 } },
+  animate: { x: 0, transition: { type: 'tween', duration: 0.5 } },
+  exit: { x: '-100vw', transition: { type: 'tween', duration: 0.5 } },
 };
+
+
 
 
 export const NaviLarge = ({ Function1, Function2, Function3, Function4, State1, State2, State3, State4 }: Props) => {
