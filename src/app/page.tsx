@@ -10,6 +10,7 @@ import ProjectGrid from "@/components/works/ProjectGrid";
 import Contact from "@/components/contact/contact";
 import ProfileLarge from "@/components/ProfileLarge";
 import { NaviLarge } from "@/components/NaviLarge";
+import { Navi } from '@/components/Navi';
 
 export default function Home() {
   const variants = {
@@ -130,21 +131,22 @@ export default function Home() {
 
       {/* Mobile Page */}
       <div className="relative z-20 md:hidden">
+        <Navi />
         <section className="w-full h-auto pb-12 flex justify-center ">
           <Profile />
         </section>
-        <section className="pb-6">
+        <section className="pb-6" id='about'>
           <AboutMe />
           <MyServices />
         </section>
-        <section className="pb-6">
+        <section className="pb-6" id='resume'>
           <Skills />
           <Knowledge />
         </section>
-        <section className="pb-6">
+        <section className="pb-6" id='works'>
           <ProjectGrid />
         </section>
-        <section>
+        <section id='contact'>
           <Contact />
         </section>
       </div>

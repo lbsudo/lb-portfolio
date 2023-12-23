@@ -17,7 +17,7 @@ export default function ProfileLarge() {
               <p className=" text-4xl text-center whitespace-nowrap w-full font-bold">Lawrence Brown</p>
             </div>
             <div className='w-full'>
-              <p className="text-violet-500 text-2xl text-center h-10 w-full flex justify-center items-center whitespace-nowrap">
+              <p className="text-primary text-2xl text-center h-10 w-full flex justify-center items-center whitespace-nowrap">
                 <Typewriter
                   words={words}
                   loop={false}

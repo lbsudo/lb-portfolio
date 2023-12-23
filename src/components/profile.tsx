@@ -16,7 +16,7 @@ export default function Profile() {
             <p className=" text-4xl font-bold">Lawrence Brown</p>
           </div>
           <div className="">
-            <p className="text-violet-500 text-3xl text-center h-10 w-auto flex justify-center items-center">
+            <p className="text-primary text-3xl text-center h-10 w-auto flex justify-center items-center">
               <Typewriter
                 words={words}
                 loop={false}

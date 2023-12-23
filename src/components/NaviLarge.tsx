@@ -41,25 +41,25 @@ export const NaviLarge = ({ Function1, Function2, Function3, Function4, State1, 
         <div className="bg-stone-800/50 mb-20">
           {/* Side-bar control & ThemeSwitch */}
           <div className="flex flex-col justify-between items-center p-4 text-2xl space-y-6">
-            <button onClick={() => Function1()} style={{ color: State1 ? '#8b5cf6' : 'currentcolor' }}>
-              <FaRegUser className="hover:text-violet-500" >
+            <button onClick={() => Function1()} style={{ color: State1 ? '#6366F1' : 'currentcolor' }}>
+              <FaRegUser className="hover:text-primary" >
               </FaRegUser>
             </button>
-            <button onClick={() => Function2()} style={{ color: State2 ? '#8b5cf6' : 'currentcolor' }}>
-              <FaRegListAlt className="hover:text-violet-500" >
+            <button onClick={() => Function2()} style={{ color: State2 ? '#6366F1' : 'currentcolor' }}>
+              <FaRegListAlt className="hover:text-primary" >
               </FaRegListAlt>
             </button>
-            <button onClick={() => Function3()} style={{ color: State3 ? '#8b5cf6' : 'currentcolor' }}>
-              <FaRegFolderOpen className="hover:text-violet-500">
+            <button onClick={() => Function3()} style={{ color: State3 ? '#6366F1' : 'currentcolor' }}>
+              <FaRegFolderOpen className="hover:text-primary">
               </FaRegFolderOpen>
             </button>
             <button>
               <Link href='https://dev.to/lbsudo' target="_blank">
-                <FaRegNewspaper className="hover:text-violet-500" />
+                <FaRegNewspaper className="hover:text-primary" />
               </Link>
             </button>
-            <button onClick={() => Function4()} style={{ color: State4 ? '#8b5cf6' : 'currentcolor' }}>
-              <FaRegPaperPlane className="hover:text-violet-500">
+            <button onClick={() => Function4()} style={{ color: State4 ? '#6366F1' : 'currentcolor' }}>
+              <FaRegPaperPlane className="hover:text-primary">
               </FaRegPaperPlane>
             </button>
           </div>

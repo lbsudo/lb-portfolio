@@ -46,7 +46,7 @@ export default function RootLayout({
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className=" flex flex-col h-full w-full">
 
-            <Navi />
+            {/* <Navi /> */}
             {/* <Navbar /> */}
             <main className="container max-w-full h-full flex-grow relative">
               <video autoPlay loop muted playsInline className="absolute md:hidden h-full w-full z-0 object-cover object-center overflow-hidden">

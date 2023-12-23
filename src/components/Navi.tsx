@@ -15,7 +15,7 @@ export const Navi = () => {
       <div className="flex w-full px-4 pt-1 justify-center md:hidden">
         <div className="flex flex-col w-1/2 items-start justify-between">
           <p className="font-semibold">Lawrence Brown</p>
-          <p className="text-violet-500 h-10">
+          <p className="text-primary h-10">
             <Typewriter
               words={words}
               loop={false}
@@ -28,7 +28,7 @@ export const Navi = () => {
           </p>
         </div>
         <div className="w-1/2 h-auto flex items-center justify-end">
-          <ThemeSwitch />
+          {/* <ThemeSwitch /> */}
           <button className="text-current"><HiBars3 className="text-3xl" /></button>
         </div>
       </div>
@@ -39,32 +39,32 @@ export const Navi = () => {
 
       <div className="flex justify-between px-6 text-2xl">
         <button>
-          <FaRegUser  >
-            <Link href={''} />
-          </FaRegUser>
+          <Link href='#about' >
+            <FaRegUser />
+          </Link>
         </button>
         <button>
-          <FaRegListAlt >
-            <Link href={''} />
-          </FaRegListAlt>
+          <Link href='#resume' >
+            <FaRegListAlt />
+          </Link>
         </button>
         <button>
-          <FaRegFolderOpen>
-            <Link href={''} />
-          </FaRegFolderOpen>
+          <Link href='#works' >
+            <FaRegFolderOpen />
+          </Link>
         </button>
         <button>
-          <FaRegNewspaper>
-            <Link href={'https://dev.to/lbsudo'} />
-          </FaRegNewspaper>
+          <Link href='https://dev.to/lbsudo' target="_blank" >
+            <FaRegNewspaper />
+          </Link>
         </button>
         <button>
-          <FaRegPaperPlane>
-            <Link href={''} />
-          </FaRegPaperPlane>
+          <Link href='#contact' >
+            <FaRegPaperPlane />
+          </Link>
         </button>
       </div>
-    </div>
+    </div >
 
   );
 };
